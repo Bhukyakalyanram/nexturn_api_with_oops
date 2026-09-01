@@ -95,6 +95,11 @@ class StudentManager:
 manager = StudentManager()
 
 
+@app.get("/test")
+def handle_test():
+    return "Working"
+
+
 @app.post("/students")
 def add_student():
 

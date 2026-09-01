@@ -12,6 +12,9 @@ dependencies = [
     "requests>=2.34.2",
 ]
 
+[tool.vercel]
+entrypoint = "src.flaskapi_pr.student:app"
+
 [project.scripts]
 fastapi-pr = "fastapi_pr:main"
 
